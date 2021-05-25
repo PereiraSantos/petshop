@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServicoPrincipalService } from './servico-principal.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pet-shop-maria';
+
+  eventoBotao: any = "dono";
+  
+  constructor(private service: ServicoPrincipalService) { 
+  
+  }
+
+  ngOnInit() {
+  }
+
+  eventoBotaService(evento: String){
+    this.eventoBotao = evento;
+  }
+  
 }
