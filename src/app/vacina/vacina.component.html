@@ -1,3 +1,10 @@
-<p>
-  vacina works!
-</p>
+<section>
+  <br><br>
+  <div>
+    <form [formGroup]="form" id="form" (ngSubmit)="salvaVaciana()">
+      <input type="text" id="decricao" formControlName="descricao"/><br><br>
+
+      <button type="submit" id="botao_registrar" class="btn btn-primary mt-4">SALVAR</button>
+    </form>
+  </div>
+</section>
