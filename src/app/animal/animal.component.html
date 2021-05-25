@@ -1,0 +1,12 @@
+<section>
+  <br><br>
+  <div>
+    <form [formGroup]="form" id="form" (ngSubmit)="salvaAnimal()">
+      <input type="text" id="nome" formControlName="nome"/><br><br>
+      <input type="text" id="raca" formControlName="raca"/><br><br>
+      <input type="text" id="dono" formControlName="dono"/><br><br>
+
+      <button type="submit" id="botao_registrar" class="btn btn-primary mt-4">SALVAR</button>
+    </form>
+  </div>
+</section>
